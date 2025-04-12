@@ -14,13 +14,11 @@ public class User {
     private String password;
 
     // Constructor
-
     public User(String userId, String email, String password) {
         this.userId = userId;
         this.email = email;
         this.password = password;
     }
-    
 
     // Getter and Setter
     public String getEmail() {
@@ -31,9 +29,7 @@ public class User {
         this.email = email;
     }
 
-    public void updateEmail(String newEmail) {
-        this.email = newEmail;
-    }
+ 
 
     // Change password method
     public boolean changePassword(String oldPassword, String newPassword) {
@@ -52,6 +48,10 @@ public class User {
 
     public String getPassword() {
         return password; // In real applications, avoid this for security!
+    }
+
+    public void updateEmail(String newEmail) {
+        this.email = newEmail;
     }
 
     public static void main(String[] args) {
