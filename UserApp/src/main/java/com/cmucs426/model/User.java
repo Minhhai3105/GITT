@@ -43,4 +43,7 @@ public class User {
     public String getPassword() {
         return password; // In real applications, avoid this for security!
     }
+    public static void main(String[] args) {
+        
+    }
 }
